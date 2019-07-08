@@ -17,6 +17,6 @@ public class Institution {
     private AcademicCalendar academicCalendar = new AcademicCalendar();
     private Address address = new Address();
     private String logo;
-    private Map<String, Link> _links = new HashMap<>();
+    private Map<String, Object> _links = new HashMap<>();
 
 }
