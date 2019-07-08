@@ -1,8 +1,13 @@
 package nl.vorsen.ooapi;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Getter
+@Setter
 public class CourseOffering {
 
   private String courseOfferingId;
