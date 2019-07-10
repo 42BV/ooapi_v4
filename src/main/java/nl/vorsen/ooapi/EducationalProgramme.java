@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Getter
 @Setter
-public class EducationProgramme {
+public class EducationalProgramme {
 
   private String educationalProgrammeId;
   private String name;
