@@ -1,8 +1,9 @@
-package nl.vorsen.ooapi;
+package nl.vorsen.ooapi.v3;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import nl.vorsen.ooapi.Paged;
 
 import java.util.HashMap;
 import java.util.Map;

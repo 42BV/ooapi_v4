@@ -1,4 +1,4 @@
-package nl.vorsen.ooapi;
+package nl.vorsen.ooapi.v3;
 
 import lombok.Getter;
 import lombok.Setter;
