@@ -22,6 +22,7 @@ public class Offering {
     private String abbreviation;
     private String description;
     private String mainLanguage;
+    private String modeOfStudy;
 
     @Min(0)
     private int maxNumberStudents;
