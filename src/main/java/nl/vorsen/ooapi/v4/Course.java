@@ -4,14 +4,12 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 @Getter
 @Setter
-public class Course {
+public class Course extends Data {
 
     private String courseId;
     private String name;
@@ -26,6 +24,5 @@ public class Course {
     private Set<String> resources = new HashSet<>();
     private String assessment;
     private String link;
-    private Map<String, Object> ext = new HashMap<>();
 
 }

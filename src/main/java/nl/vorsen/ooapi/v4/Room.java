@@ -1,9 +1,6 @@
 package nl.vorsen.ooapi.v4;
 
-import java.util.HashMap;
-import java.util.Map;
-
-public class Room {
+public class Room extends Data {
 
     private String abbreviation;
     private String name;
@@ -14,6 +11,5 @@ public class Room {
     private int floor;
     private String wing;
     private Geolocation geolocation;
-    private Map<String, Object> ext = new HashMap<>();
 
 }

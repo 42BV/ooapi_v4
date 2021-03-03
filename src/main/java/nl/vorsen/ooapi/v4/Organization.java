@@ -4,13 +4,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Getter
 @Setter
-public class Organization {
+public class Organization extends Data {
 
     private String organizationId;
     private String name;
@@ -21,6 +19,5 @@ public class Organization {
     private String link;
     private String logo;
     private String brin;
-    private Map<String, Object> ext = new HashMap<>();
 
 }

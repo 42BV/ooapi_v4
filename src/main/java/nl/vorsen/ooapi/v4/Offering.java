@@ -6,14 +6,12 @@ import lombok.Setter;
 
 import javax.validation.constraints.Min;
 import java.time.ZonedDateTime;
-import java.util.HashMap;
-import java.util.Map;
 
 import static nl.vorsen.ooapi.v4.AcademicSession.DATE_PATTERN;
 
 @Getter
 @Setter
-public class Offering {
+public class Offering extends Data {
 
     private String offeringId;
     private String type;
@@ -48,7 +46,5 @@ public class Offering {
     private Component component;
     private Offering courseOffering;
     private Organization organization;
-
-    private Map<String, Object> ext = new HashMap<>();
 
 }
