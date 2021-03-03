@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class Page<T> {
+public class Page<T> extends Data {
 
     private int pageNumber;
     private int pageSize;

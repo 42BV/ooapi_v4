@@ -5,12 +5,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.ZonedDateTime;
-import java.util.HashMap;
-import java.util.Map;
 
 @Getter
 @Setter
-public class AcademicSession {
+public class AcademicSession extends Data {
 
     public static final String DATE_PATTERN = "yyyy-MM-dd'T'HH:mm.ssS'Z'";
 
@@ -25,7 +23,5 @@ public class AcademicSession {
 
     private AcademicSession year;
     private AcademicSession parent;
-
-    private Map<String, Object> ext = new HashMap<>();
 
 }

@@ -4,8 +4,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -31,5 +33,7 @@ public class Program {
     private String qualificationRequirements;
     private String link;
     private Map<String, Object> ext = new HashMap<>();
+    private List<Program> children = new ArrayList<>();
+    private Organization organization;
 
 }

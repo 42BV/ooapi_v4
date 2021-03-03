@@ -4,13 +4,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Getter
 @Setter
-public class Association {
+public class Association extends Data {
 
     public static final String TYPE_PROGRAM = "programOfferingAssociation";
     public static final String TYPE_COURSE = "courseOfferingAssociation";
@@ -27,6 +25,5 @@ public class Association {
     private String state;
     private List<Person> persons = new ArrayList<>();
     private Offering offering;
-    private Map<String, Object> ext = new HashMap<>();
 
 }
