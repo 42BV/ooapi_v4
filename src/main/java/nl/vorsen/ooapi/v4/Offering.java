@@ -1,9 +1,8 @@
 package nl.vorsen.ooapi.v4;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
-import nl.vorsen.ooapi.v4.json.DateSerializer;
 
 import javax.validation.constraints.Min;
 import java.time.LocalDate;
@@ -32,10 +31,10 @@ public class Offering extends Data {
 
     private boolean isLineItem;
 
-    @JsonSerialize(using = DateSerializer.class)
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private LocalDate startDate;
 
-    @JsonSerialize(using = DateSerializer.class)
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private LocalDate endDate;
 
     private String resultValueType;

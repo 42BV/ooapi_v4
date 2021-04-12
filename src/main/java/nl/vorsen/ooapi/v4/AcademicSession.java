@@ -1,9 +1,8 @@
 package nl.vorsen.ooapi.v4;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
-import nl.vorsen.ooapi.v4.json.DateSerializer;
 
 import java.time.LocalDate;
 
@@ -14,10 +13,10 @@ public class AcademicSession extends Data {
     private String academicSessionId;
     private String name;
 
-    @JsonSerialize(using = DateSerializer.class)
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private LocalDate startDate;
 
-    @JsonSerialize(using = DateSerializer.class)
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private LocalDate endDate;
 
     private AcademicSession year;
