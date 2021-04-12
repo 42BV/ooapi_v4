@@ -1,6 +1,7 @@
 package nl.vorsen.ooapi.v4;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -29,7 +30,8 @@ public class Offering extends Data {
     @Min(0)
     private int pendingNumberStudents;
 
-    private boolean isLineItem;
+    @JsonProperty("isLineItem")
+    private boolean lineItem;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private LocalDate startDate;
