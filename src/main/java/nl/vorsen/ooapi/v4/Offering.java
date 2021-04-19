@@ -39,12 +39,17 @@ public class Offering extends Data {
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private LocalDate endDate;
 
+    private Organization organization;
+    private Program program;
+
+    private Course course;
+    private Offering programOffering;
+
     private String resultValueType;
     private int resultWeight;
 
     private Room room;
     private Component component;
     private Offering courseOffering;
-    private Organization organization;
 
 }
