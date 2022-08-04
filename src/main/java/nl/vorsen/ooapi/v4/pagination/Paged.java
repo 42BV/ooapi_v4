@@ -1,4 +1,4 @@
-package nl.vorsen.ooapi;
+package nl.vorsen.ooapi.v4.pagination;
 
 public interface Paged {
 

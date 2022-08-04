@@ -3,7 +3,7 @@ package nl.vorsen.ooapi.v4.parameters;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
-import nl.vorsen.ooapi.Paged;
+import nl.vorsen.ooapi.v4.pagination.Paged;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
